@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Chat</title>
+</head>
+<body style="margin: 60px;">
+    <link rel="stylesheet" href="stylechat.css">
+    <h2>pesan</h2>
+        <div class="result-chat">
+        </div>
+       
+        <div>
+            <input type="text" class="input-chat">
+            <button class="btn-chat">Kirim</button>
+        </div>
+    </main>
+
+    <script>
+        let resultChat = document.querySelector(".result-chat");
+        const inputChat = document.querySelector(".input-chat");
+        const btnChat = document.querySelector(".btn-chat");
+        alert ("Assalammualaikum\nPesan Masuk");
+        btnChat.addEventListener("click", function() {
+            resultChat.innerHTML = resultChat.innerHTML + "<br>" + "pesan:" + inputChat.value;
+            inputChat.value = "";
+        })
+    </script>
+</body>
+</html>

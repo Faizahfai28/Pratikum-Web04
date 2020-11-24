@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Picker</title>
+</head>
+<body style="margin: 100px" style="padding: 50px">
+    <link rel="stylesheet" href="styleimg.css">
+    <center>
+        <select onchange="Gantigambar();" id="listgambar">
+            <option value="Avengers.jpg">Pilih Karakter</option>
+            <option value="Captain Marvel.jpg">Captain Marvel</option>
+            <option value="Captain Amerika.jpg">Captain Amerika</option>
+            <option value="IronMan.jpg">Iron Man</option>
+            <option value="Hulk.jpg">Hulk</option>
+            <option value="Black Widow.jpg">Black Widow</option>
+            <option value="Hawkeye.jpg">Hawkeye</option>
+        </select>
+    
+        <br> 
+        <img src="Avengers.jpg" style="width: 60%" id="gambar">      
+   </center>
+</body> 
+<script type="text/javascript">
+    function Gantigambar(){
+        let gambar = document.getElementById("listgambar").value;
+        document.getElementById("gambar").src = gambar;
+        alert("Ini Gambar" + gambar);
+    }  
+    </script>
+</html>

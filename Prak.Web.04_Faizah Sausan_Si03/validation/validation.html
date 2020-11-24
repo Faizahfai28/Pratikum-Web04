@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VALIDATION</title>	
+</head>
+<body style="margin: 120px">
+	<link rel="stylesheet" href="style.css">
+
+	<center>
+		<form>
+			Nama :<br/>
+			<input type="text" required="" maxlength="30" placeholder="Nama" id="nama" name="nama"><br/><br/>
+			Email :<br/>
+			<input type="email" required="" placeholder="Email" id="email" name="email"><br/><br/>
+			Jam Keberangkatan :<br/>
+			<input type="date" required="" placeholder="Jam Keberangkatan" id="jam" name="jam"><br/><br/>
+            Tujuan Keberangkatan :<br/>
+			<td>
+                <select onchange="tujuan()" id="tujuan" style="width: 30%" >
+                    <option value="">Aceh</option>
+                    <option value="">Jawa</option>
+                    <option value="">Kalimantan</option>
+                    <option value="">Sulawesi</option>
+                    <option value="">Sumatera</option>
+                    <option value="">Nusa Tenggara</option>
+                </select></td>
+            
+                <br>
+			Jumlah Tiket<br/>
+			<input type="number" min="1" max="10" placeholder="Jumlah Tiket" id="jml_tiket" name="jml_tiket"><br/><br/>
+			<button type="submit">SUBMIT</button>
+				
+		</form>
+	</center>
+	
+</body>
+</html>
